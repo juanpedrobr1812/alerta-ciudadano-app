@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edtCorreo;
     EditText edtPassword;
     Button btnLogin;
+    Button btnRegistrar;
 
     private FirebaseAuth mAuth;
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         edtCorreo = (EditText) findViewById(R.id.editText);
         edtPassword = (EditText) findViewById(R.id.editText2);
         btnLogin = (Button) findViewById(R.id.button);
+        btnRegistrar = (Button) findViewById(R.id.button2);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
+            }
+        });
+
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, RegistroActivity.class);
+                startActivity(i);
             }
         });
     }
