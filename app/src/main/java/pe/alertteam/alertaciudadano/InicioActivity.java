@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
 import android.content.Intent;
@@ -27,6 +29,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import pe.alertteam.alertaciudadano.Adapters.RecViewInicio;
+
 public class InicioActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -36,6 +40,7 @@ public class InicioActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseUser currentUser;
     private FirebaseFirestore db;
+    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +57,7 @@ public class InicioActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         menu = new pe.alertteam.alertaciudadano.Utils.Menu(navigationView);
+        recyclerView = findViewById(R.id.recycler_inicio);
 
         setSupportActionBar(toolbar);
 
@@ -93,9 +99,10 @@ public class InicioActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<QuerySnapshot> task2) {
                                     if(task2.isSuccessful()){
-                                        for (QueryDocumentSnapshot alerta : task2.getResult()) {
-                                            Log.d("Alerta", alerta.getString("codigo") + " " + alerta.getString("descripcion"));
-                                        }
+                                        RecViewInicio adapter = new RecViewInicio(InicioActivity.this, task2.getResult().getDocuments());
+                                        recyclerView.setAdapter(adapter);
+                                        recyclerView.setHasFixedSize(true);
+                                        recyclerView.setLayoutManager(new LinearLayoutManager(InicioActivity.this));
                                     }
                                 }
                             });
