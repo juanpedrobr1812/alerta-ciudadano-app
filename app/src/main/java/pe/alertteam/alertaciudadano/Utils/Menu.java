@@ -29,8 +29,12 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
+import pe.alertteam.alertaciudadano.AlertaSOSActivity;
+import pe.alertteam.alertaciudadano.GruposActivity;
 import pe.alertteam.alertaciudadano.InicioActivity;
 import pe.alertteam.alertaciudadano.MainActivity;
+import pe.alertteam.alertaciudadano.MisAlertasActivity;
+import pe.alertteam.alertaciudadano.PerfilActivity;
 import pe.alertteam.alertaciudadano.R;
 
 public class Menu {
@@ -96,19 +100,19 @@ public class Menu {
                 activity.startActivity(i);
                 break;
             case R.id.reportes:
-                i = new Intent(activity, InicioActivity.class);
+                i = new Intent(activity, MisAlertasActivity.class);
                 activity.startActivity(i);
                 break;
             case R.id.grupos:
-                i = new Intent(activity, InicioActivity.class);
+                i = new Intent(activity, GruposActivity.class);
                 activity.startActivity(i);
                 break;
             case R.id.sos:
-                i = new Intent(activity, InicioActivity.class);
+                i = new Intent(activity, AlertaSOSActivity.class);
                 activity.startActivity(i);
                 break;
             case R.id.perfil:
-                i = new Intent(activity, InicioActivity.class);
+                i = new Intent(activity, PerfilActivity.class);
                 activity.startActivity(i);
                 break;
             case R.id.logout:
