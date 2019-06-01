@@ -17,23 +17,53 @@
         android:padding="@dimen/size10dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/list_timestamp"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Hace 30 minutos"
-            android:textAppearance="?attr/textAppearanceListItem"
-            android:textSize="@dimen/article_subheading" />
+            android:padding="@dimen/size10dp">
+
+            <ImageView
+                android:id="@+id/card_avatar"
+                android:layout_width="@dimen/avator_size"
+                android:layout_height="@dimen/avator_size"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/card_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_toRightOf="@+id/card_avatar"
+                tools:text="Anonimo"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="@dimen/article_subheading" />
+
+            <TextView
+                android:id="@+id/card_timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_username"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_toRightOf="@+id/card_avatar"
+                android:textColor="@color/cardview_dark_background"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:text="Hace 30 minutos"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="@dimen/list_body" />
+
+        </RelativeLayout>
 
         <ImageView
-            android:id="@+id/image_photo"
-            android:layout_width="@dimen/avator_size"
-            android:layout_height="@dimen/avator_size"
+            android:id="@+id/card_image_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             tools:src="@drawable/header" />
 
         <TextView
-            android:id="@+id/list_desc"
+            android:id="@+id/card_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/cardview_dark_background"

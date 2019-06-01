@@ -61,7 +61,7 @@ public class Menu {
                                     tvTitulo.setText(nombrecompleto);
                                 }
                                 if(usuario.getPhotoUrl() != null){
-                                    Picasso.with(navigationView.getContext()).load(usuario.getPhotoUrl()).into(new Target() {
+                                    Picasso.get().load(usuario.getPhotoUrl()).into(new Target() {
                                         @Override
                                         public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
                                             Drawable drawableImage = new BitmapDrawable(navigationView.getResources(), bitmap);
@@ -69,10 +69,14 @@ public class Menu {
                                         }
 
                                         @Override
-                                        public void onBitmapFailed(Drawable errorDrawable) { }
+                                        public void onBitmapFailed(Exception e, Drawable errorDrawable) {
+
+                                        }
 
                                         @Override
-                                        public void onPrepareLoad(Drawable placeHolderDrawable) {}
+                                        public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+                                        }
                                     });
                                 }
                                 tvSub.setText(usuario.getEmail());
