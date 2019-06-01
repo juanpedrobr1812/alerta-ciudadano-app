@@ -1,6 +1,5 @@
 .gradle/
 build/
-
 local.properties
 
 .idea/workspace.xml
@@ -9,3 +8,5 @@ local.properties
 .idea/assetWizardSettings.xml
 .idea/dictionaries
 .idea/libraries
+
+app/app.iml
