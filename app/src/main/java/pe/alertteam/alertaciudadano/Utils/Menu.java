@@ -96,10 +96,20 @@ public class Menu {
                 activity.startActivity(i);
                 break;
             case R.id.reportes:
-
+                i = new Intent(activity, InicioActivity.class);
+                activity.startActivity(i);
                 break;
             case R.id.grupos:
-
+                i = new Intent(activity, InicioActivity.class);
+                activity.startActivity(i);
+                break;
+            case R.id.sos:
+                i = new Intent(activity, InicioActivity.class);
+                activity.startActivity(i);
+                break;
+            case R.id.perfil:
+                i = new Intent(activity, InicioActivity.class);
+                activity.startActivity(i);
                 break;
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();

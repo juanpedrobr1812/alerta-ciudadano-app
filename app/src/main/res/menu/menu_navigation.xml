@@ -3,7 +3,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/inicio"
-            android:icon="@drawable/ic_textsms_black_24dp"
+            android:icon="@drawable/ic_history_black_24dp"
             android:tint="@color/colorblue"
             android:title="Inicio" />
         <item
@@ -13,12 +13,12 @@
             android:title="Mis alertas" />
         <item
             android:id="@+id/grupos"
-            android:icon="@drawable/ic_textsms_black_24dp"
+            android:icon="@drawable/ic_group_black_24dp"
             android:tint="@color/colorblue"
             android:title="Mis grupos" />
         <item
             android:id="@+id/sos"
-            android:icon="@drawable/ic_textsms_black_24dp"
+            android:icon="@drawable/ic_warning_black_24dp"
             android:tint="@color/colorblue"
             android:title="Alerta SOS" />
         <item
@@ -26,11 +26,11 @@
             android:icon="@drawable/ic_person_black_24dp"
             android:tint="@color/colorblue"
             android:title="Mi Perfil" />
-        <item
+        <!--<item
             android:id="@+id/configuracion"
             android:icon="@drawable/ic_textsms_black_24dp"
             android:tint="@color/colorblue"
-            android:title="Configuración" />
+            android:title="Configuración" />-->
     </group>
     <!--<item android:title="Servicios y Suscripciones">
         <menu>
