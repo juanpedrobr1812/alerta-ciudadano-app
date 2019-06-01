@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "669493707191",
+    "firebase_url": "https://alertaciudadano2019.firebaseio.com",
+    "project_id": "alertaciudadano2019",
+    "storage_bucket": "alertaciudadano2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669493707191:android:8387435b1b613fc8",
+        "android_client_info": {
+          "package_name": "pe.alertteam.alertaciudadano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669493707191-bdmbuhe5cd6tk8dvrn4kbofu616bjv8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.alertteam.alertaciudadano",
+            "certificate_hash": "be96e6fe634c9ec4cd4f955a369bc35afa52b21d"
+          }
+        },
+        {
+          "client_id": "669493707191-eshfadea25toujiv3kf5ko7rub32diht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9XX-JKQ0cKDckR11Cz5milGAASlFfrtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669493707191-eshfadea25toujiv3kf5ko7rub32diht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
