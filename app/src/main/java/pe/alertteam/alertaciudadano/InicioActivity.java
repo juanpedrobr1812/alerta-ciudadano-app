@@ -41,6 +41,7 @@ public class InicioActivity extends AppCompatActivity {
     private FirebaseUser currentUser;
     private FirebaseFirestore db;
     private RecyclerView recyclerView;
+    private FloatingActionButton fabNuevaAlerta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,20 +58,29 @@ public class InicioActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         menu = new pe.alertteam.alertaciudadano.Utils.Menu(navigationView);
-        recyclerView = findViewById(R.id.recycler_inicio);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_inicio);
+        fabNuevaAlerta = (FloatingActionButton) findViewById(R.id.fabNuevaAlerta);
 
         setSupportActionBar(toolbar);
 
         cargarMenu();
 
         cargarNoticias();
+
+        fabNuevaAlerta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(InicioActivity.this, AlertaActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void cargarMenu(){
         ActionBar supportActionBar = getSupportActionBar();
         if (supportActionBar != null) {
             VectorDrawableCompat indicator = VectorDrawableCompat.create(getResources(), R.drawable.ic_menu_black_24dp, getTheme());
-            indicator.setTint(ResourcesCompat.getColor(getResources(),R.color.colorPrimary,getTheme()));
+            indicator.setTint(ResourcesCompat.getColor(getResources(),R.color.colorWhite,getTheme()));
             supportActionBar.setHomeAsUpIndicator(indicator);
             supportActionBar.setDisplayHomeAsUpEnabled(true);
         }

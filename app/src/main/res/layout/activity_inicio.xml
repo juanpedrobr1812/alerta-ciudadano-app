@@ -26,14 +26,14 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         </com.google.android.material.appbar.AppBarLayout>
-        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabNuevaAlerta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/size10dp"
             android:tint="@color/colorWhite"
-            android:src="@drawable/ic_add_black_24dp" />-->
+            android:src="@drawable/ic_add_black_24dp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_inicio"
