@@ -10,7 +10,7 @@
             android:id="@+id/reportes"
             android:icon="@drawable/ic_textsms_black_24dp"
             android:tint="@color/colorblue"
-            android:title="Mis reportes" />
+            android:title="Mis alertas" />
         <item
             android:id="@+id/grupos"
             android:icon="@drawable/ic_textsms_black_24dp"

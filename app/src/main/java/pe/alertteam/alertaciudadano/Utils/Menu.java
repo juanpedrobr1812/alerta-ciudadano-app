@@ -75,9 +75,7 @@ public class Menu {
                                         public void onPrepareLoad(Drawable placeHolderDrawable) {}
                                     });
                                 }
-                                tvSub.setText(info.get("type").toString().trim() + " - " + usuario.getEmail());
-                                navigationView.getMenu().clear();
-                                navigationView.inflateMenu(R.menu.menu_navigation);
+                                tvSub.setText(usuario.getEmail());
                             }
                         } else {
                             Log.w(TAG, "Error getting documents.", task.getException());

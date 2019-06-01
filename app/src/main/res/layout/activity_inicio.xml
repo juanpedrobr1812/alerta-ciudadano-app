@@ -26,6 +26,22 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         </com.google.android.material.appbar.AppBarLayout>
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabNuevaAlerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/size10dp"
+            android:tint="@color/colorWhite"
+            android:src="@drawable/ic_add_black_24dp" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:scrollbars="vertical" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"

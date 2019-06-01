@@ -73,7 +73,7 @@ public class RegistroActivity extends AppCompatActivity {
                                     perfil.put("direccion", edtDireccion.getText().toString().trim());
 
                                     db.collection("users")
-                                            .add(user)
+                                            .add(perfil)
                                             .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                                 @Override
                                                 public void onSuccess(DocumentReference documentReference) {

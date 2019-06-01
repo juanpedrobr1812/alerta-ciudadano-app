@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/size10dp"
+    android:layout_marginRight="@dimen/size10dp"
+    android:layout_marginBottom="@dimen/size10dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/list_timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hace 30 minutos"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="@dimen/article_subheading" />
+
+        <ImageView
+            android:id="@+id/list_avatar"
+            android:layout_width="@dimen/avator_size"
+            android:layout_height="@dimen/avator_size"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/header" />
+
+        <TextView
+            android:id="@+id/list_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            tools:text="Descripciond e la sdksjdjsdk sjdkjskdj sjd"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="@dimen/list_body" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
