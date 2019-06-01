@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicio"
+            android:icon="@drawable/ic_textsms_black_24dp"
+            android:tint="@color/colorblue"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/reportes"
+            android:icon="@drawable/ic_textsms_black_24dp"
+            android:tint="@color/colorblue"
+            android:title="Mis reportes" />
+        <item
+            android:id="@+id/grupos"
+            android:icon="@drawable/ic_textsms_black_24dp"
+            android:tint="@color/colorblue"
+            android:title="Mis grupos" />
+        <item
+            android:id="@+id/sos"
+            android:icon="@drawable/ic_textsms_black_24dp"
+            android:tint="@color/colorblue"
+            android:title="Alerta SOS" />
+        <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:tint="@color/colorblue"
+            android:title="Mi Perfil" />
+        <item
+            android:id="@+id/configuracion"
+            android:icon="@drawable/ic_textsms_black_24dp"
+            android:tint="@color/colorblue"
+            android:title="Configuración" />
+    </group>
+    <!--<item android:title="Servicios y Suscripciones">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/store"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Servicios" />
+                <item
+                    android:id="@+id/subscriptions"
+                    android:icon="@drawable/ic_shop_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Mis suscripciones" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Gestión de Usuarios" android:id="@+id/usuario_group_admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/users"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Usuarios" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Gestión de Clientes" android:id="@+id/cliente_group_admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/clients"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Clientes" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Tareas y Visitas" android:id="@+id/tarea_group_admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tasks"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Tareas" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Ventas" android:id="@+id/venta_group_admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/products"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Productos" />
+                <item
+                    android:id="@+id/shop"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Ventas" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Tracking" android:id="@+id/tracking_group_admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tracking"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Rastreo de Personal" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Financiamiento" android:id="@+id/financiamiento_group_admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/financing_product"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Productos Financieros" />
+                <item
+                    android:id="@+id/financing"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:tint="@color/colorblue"
+                    android:title="Financiamientos" />
+            </group>
+        </menu>
+    </item>-->
+    <group android:id="@+id/logout_group" android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:tint="@color/colorblue"
+            android:title="Cerrar sesión" />s
+    </group>
+</menu>
